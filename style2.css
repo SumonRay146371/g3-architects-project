@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+/*  Shared Styles */
+
+.btn-primary{
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1.25rem;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    cursor: pointer;
+    border: 0;
+    margin: 20px 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header{
+    background-color: antiquewhite;
+    padding: 50px 240px;
+}
+
+.nav-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+nav>ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #424242;
+}
+ul li a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+ .banner-content{
+  /* width: 800px; */
+ max-width: 800px;
+  
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner .banner-title{
+    margin-top: 40px;
+font-size: 4rem;
+font-weight: 700;
+color: #131313;
+}
+.banner-desc{
+    color: #727272;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+.team-container{
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-image-container{
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.team-image-container img{
+    width: 100%;
+}
+.team-features{
+    padding: 40px;
+    max-width: 50%;
+
+}
+
+.team-title{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+.team-description{
+ text-align: justify;
+}
+
+
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+padding: 20px;
+
+border: 1px solid red;
+border-radius: 10px;
+}
+
+.card .card-state{
+    font-size: 2rem;
+}
+.card img{
+    width: 50%;
+}
+
+
+
+
+/* gadget accessories */
+
+.wrapper{
+
+    max-width: 1420px;
+    margin: 70px auto;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+.left-side{
+    max-width: 700px;
+}
+.gadget  { 
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: #FFF;
+    border-radius: 8px;
+     margin-bottom: 20px;
+
+}
+
+.gadget p { 
+margin-top: 14px;
+}
+
+.right-side {
+    max-width: 700px;
+}
+
+
+.right-side img{
+    width: 100%;
+    height: 800px;
+}
+
+.experience{
+    background: tomato;
+    color: white;
+    padding: 40px;
+    width: 40%;
+    border-radius: 8px;
+    position: relative;
+    bottom: 70px;
+    right: 80px;
+}
+
+.experience h2{
+    font-size: 3rem;
+    hyphens: auto;
+}
+.experience p{
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+
+.fact-title{
+    font-size: 2rem;
+    font-family: serif;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.fact-desc{
+    padding-left: 18px;
+    padding-bottom: 30px;
+}
+
+
+
+
+.sponsor-section{
+    max-width: 1520px;
+}
+
+.sponsor-section h2{
+    text-align: center;
+    margin: 40px;
+    font-size: 2rem;
+
+}
+.sponsor-section p{
+    text-align: center;
+    margin: 50px;
+    font-size: 1.4rem;
+
+}
+.sponsor-images{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sponsor-images img{
+}
+
+
+
+.footer-section{
+    width: 100%;
+    height: 20vh;
+    background: #000;
+    margin-top: 60px;
+}
+
+
+.footer-section h2{
+color: white;
+font-family: serif;
+text-align: center;
+padding-top: 60px;
+}
+
+.footer-section small{
+    color: lightblue;
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* very small devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    
+      }    
+      .card-container{
+        flex-direction: column;
+        gap: 20px;
+      }
+    
+      nav,.team-container,.wrapper{
+        flex-direction: column;
+      }
+
+      .experience {
+        width: 55%;
+        left: 10px;
+        top: 10px;
+        bottom: 0;
+        right: 0;
+      }
+      .experience h2{
+        font-size: 1rem;
+      }
+      .experience p{
+        font-size: 0.7rem;
+      }
+      nav>ul{
+        margin-top: 10px;
+      }
+    .nav-title{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+      .banner .banner-title{
+    font-size: 1rem;
+    
+      }
+    
+      .team-image-container,.team-features{
+        max-width: 95%;
+      }
+      
+    ul li{
+        list-style: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #424242;
+    }
+
+    .btn-primary{
+        border-radius: 8px;
+        color: #FFF;
+        font-size: 0.5rem;
+        background: #FF900E;
+        padding: 1rem;
+        color: #FFF;
+        cursor: pointer;
+        border: 0;
+        margin: 20px 0;
+    }
+    
+    .team-image-container{
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+    
+
+}
+
+/* mobile responsive */
+@media screen and (min-width:300px) and (max-width:576px) {
+  header{
+    padding: 20px;
+
+  }    
+  .card-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+  nav,.team-container,.wrapper{
+    flex-direction: column;
+
+  }
+.sponsor-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.right-side img{
+    object-fit: cover;
+}
+.experience{
+    right: 0px;
+    left: 60px;
+
+}
+
+.left-side h1{
+    text-align: center;
+}
+.left-side p{
+    padding: 15px;
+    hyphens: auto;
+}
+  .team-image-container{
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .team-image-container,.team-features{
+    max-width: 95%;
+  }
+  
+  nav>ul{
+    margin-top: 10px;
+  }
+
+.nav-title,.btn-primary{
+    font-size: 2rem;
+    font-weight: 600;
+}
+  .banner .banner-title{
+font-size: 2rem;
+
+  }
+
+  
+ul li{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #424242;
+}
+
+} 
+
+
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav,.team-container,.wrapper{
+        flex-direction: column;
+    }
+    .experience{
+        left: 20px;
+        right: 0;
+    }
+    .left-side{
+        max-width: 100%;
+        text-align: center;
+    }
+    .right-side{
+        max-width: 100%;
+    }
+
+    .sponsor-section {
+        max-width: 80%;
+    }
+    nav>ul{
+        margin-top: 10px;
+      }
+
+      header{
+        padding: 50px;
+    
+      } 
+
+      .team-image-container,.team-features{
+        max-width: 100%;
+      }
+    
+}
