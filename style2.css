@@ -217,8 +217,7 @@ margin-top: 14px;
 
 
 .sponsor-section{
-    max-width: 1420px;
-
+    max-width: 1520px;
 }
 
 .sponsor-section h2{
@@ -234,18 +233,16 @@ margin-top: 14px;
 
 }
 .sponsor-images{
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
-    /* flex: 1; */
-    gap: 50px;
+    gap: 80px;
     text-align: center;
     align-items: center;
     justify-content: space-around;
 }
 
 .sponsor-images img{
-    width: 100%;
 }
 
 
@@ -266,7 +263,6 @@ padding-top: 60px;
 }
 
 .footer-section small{
-    width: 100%;
     color: lightblue;
     font-size: 1rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -418,26 +414,6 @@ ul li{
     nav,.team-container,.wrapper{
         flex-direction: column;
     }
-
-    
-    .sponsor-section {
-        width: 100%;
-    }
-    .sponsor-images{
-        margin-left: 60px;
-        display: grid;
-        flex: 1;
-        grid-template-columns: repeat(2,1fr);
-    }
-    .sponsor-images img{
-        width: 80%;
-        object-fit: cover;
-
-    }
-    .footer-section {
-        width: 900px;
-
-    }
     .experience{
         left: 20px;
         right: 0;
@@ -450,6 +426,17 @@ ul li{
         max-width: 100%;
     }
 
+    .sponsor-section {
+        width: 500px;
+    }
+    .sponsor-images {
+        width: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-section{
+        background-color: #FF900E;
+    }
     nav>ul{
         margin-top: 10px;
       }
